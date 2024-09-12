@@ -27,7 +27,13 @@
         </ul>
     </li>
 </ul>
-
+<h3><b>How to play</b></h3>
+<ul>
+    <li>When the game starts, you'll see a static bird in the middle of the screen.</li>
+    <li>To begin, press the spacebar to make the bird jump.</li>
+    <li>The bird continuously falls due to gravity, so keep pressing the spacebar to avoid obstacles and stay in the air.</li>
+    <li>The goal is to pass between the columns while avoiding hitting them.</li>
+</ul>
 
 https://github.com/user-attachments/assets/7b91b6f2-10ff-4bb8-8dca-929068a01533
 

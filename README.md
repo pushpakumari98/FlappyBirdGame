@@ -27,6 +27,34 @@
         </ul>
     </li>
 </ul>
+<h3><b>Installation</b></h3>
+<ul>
+    <li><strong>Clone the Repository:</strong>
+        <ul>
+            <li>Use Git or download the project manually.</li>
+            <li><code>git clone https://github.com/your-username/flappy-bird-java-game.git</code></li>
+        </ul>
+    </li>
+    <li><strong>Add Image and Sound Files:</strong>
+        <ul>
+            <li>Download the necessary <code>.png</code> image files and <code>.wav</code> sound files and place them in the root directory of the project.</li>
+        </ul>
+    </li>
+    <li><strong>Compile the Game:</strong>
+        <ul>
+            <li>If you're using an IDE, import the project into your workspace and compile it.</li>
+            <li>If you're using the terminal, navigate to the project directory and compile the Java files using the following command:</li>
+            <li><code>javac FlappyBird.java</code></li>
+        </ul>
+    </li>
+    <li><strong>Run the Game:</strong>
+        <ul>
+            <li>After compiling, run the game with the following command:</li>
+            <li><code>java FlappyBird</code></li>
+        </ul>
+    </li>
+</ul>
+
 <h3><b>How to play</b></h3>
 <ul>
     <li>When the game starts, you'll see a static bird in the middle of the screen.</li>
@@ -75,6 +103,7 @@
     <li><strong>Modifying Difficulty:</strong> You can modify the difficulty by adjusting the speed of the columns or the frequency at which they spawn. This can be done in the <code>addColumn</code> method of the <code>FlappyBird</code> class.</li>
     <li><strong>Sound Customization:</strong> Replace the sound files (<code>mixkit-arcade.wav</code> and <code>mixkit-game-level.wav</code>) with any <code>.wav</code> files of your choice to customize background music and the game-over sound.</li>
 </ul>
+
 
 https://github.com/user-attachments/assets/7b91b6f2-10ff-4bb8-8dca-929068a01533
 

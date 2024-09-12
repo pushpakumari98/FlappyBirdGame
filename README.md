@@ -1,6 +1,6 @@
 <h2><b>Flappy Bird Game</b></h2>
 <hr>
-<p><h3>This project is a simple clone of the popular "Flappy Bird" game, built using Java's Swing and AWT libraries. The game includes custom graphics for the bird, apples, clouds, grass, and airplanes. It also features background music and a sound effect for game over.</h3></p>
+<p><This project is a simple clone of the popular "Flappy Bird" game, built using Java's Swing and AWT libraries. The game includes custom graphics for the bird, apples, clouds, grass, and airplanes. It also features background music and a sound effect for game over.</p>
 
 <h3><b>Table of Contents</b></h3>
   <ul>
@@ -33,6 +33,35 @@
     <li>To begin, press the spacebar to make the bird jump.</li>
     <li>The bird continuously falls due to gravity, so keep pressing the spacebar to avoid obstacles and stay in the air.</li>
     <li>The goal is to pass between the columns while avoiding hitting them.</li>
+</ul>
+<h3><b>Game Features</b></h3>
+<ul>
+    <li><strong>Obstacles:</strong>
+        <ul>
+            <li>Columns appear from the right and move toward the bird. The player must guide the bird through the gaps between the columns.</li>
+        </ul>
+    </li>
+    <li><strong>Collectibles:</strong>
+        <ul>
+            <li>Apples appear as collectibles. Collect them to increase your score.</li>
+        </ul>
+    </li>
+    <li><strong>Background Objects:</strong>
+        <ul>
+            <li>Clouds and airplanes move in the background to create a more dynamic environment.</li>
+        </ul>
+    </li>
+    <li><strong>Sounds:</strong>
+        <ul>
+            <li>Background music plays continuously while the game is running.</li>
+            <li>A game-over sound is played when the bird crashes.</li>
+        </ul>
+    </li>
+    <li><strong>Pause Feature:</strong>
+        <ul>
+            <li>Press P to pause and resume the game.</li>
+        </ul>
+    </li>
 </ul>
 
 https://github.com/user-attachments/assets/7b91b6f2-10ff-4bb8-8dca-929068a01533

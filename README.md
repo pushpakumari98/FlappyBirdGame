@@ -1,6 +1,6 @@
 <h2><b>Flappy Bird Game</b></h2>
 <hr>
-<p><This project is a simple clone of the popular "Flappy Bird" game, built using Java's Swing and AWT libraries. The game includes custom graphics for the bird, apples, clouds, grass, and airplanes. It also features background music and a sound effect for game over.</p>
+<p>This project is a simple clone of the popular "Flappy Bird" game, built using Java's Swing and AWT libraries. The game includes custom graphics for the bird, apples, clouds, grass, and airplanes. It also features background music and a sound effect for game over.</p>
 
 <h3><b>Table of Contents</b></h3>
   <ul>

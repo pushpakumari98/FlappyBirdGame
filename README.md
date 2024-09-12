@@ -11,7 +11,22 @@
     <li><strong>Controls</strong></li>
     <li><strong>Customization</strong></li>
 </ul>
-
+<h3><b>Requirements</b></h3>
+<ul>
+    <li><strong>Java:</strong> Ensure that you have the latest version of Java installed on your system. You can download Java from <a href="https://www.java.com">here</a>.</li>
+    <li><strong>IDE (Optional):</strong> You can use any IDE like IntelliJ IDEA, Eclipse, or NetBeans to run the project. Alternatively, it can be run directly from the command line.</li>
+    <li><strong>Audio and Image Files:</strong> The following files are needed in the same directory as the code:
+        <ul>
+            <li><strong>bird.png:</strong> The image for the bird character.</li>
+            <li><strong>apple.png:</strong> The image for apples in the game.</li>
+            <li><strong>clouds.png:</strong> The image for clouds.</li>
+            <li><strong>grasses.png:</strong> The image for grass.</li>
+            <li><strong>airplane.png:</strong> The image for airplanes.</li>
+            <li><strong>mixkit-arcade.wav:</strong> The sound file for the game-over sound.</li>
+            <li><strong>mixkit-game-level.wav:</strong> The background music sound file.</li>
+        </ul>
+    </li>
+</ul>
 
 
 https://github.com/user-attachments/assets/7b91b6f2-10ff-4bb8-8dca-929068a01533

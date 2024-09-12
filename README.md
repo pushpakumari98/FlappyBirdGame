@@ -63,6 +63,18 @@
         </ul>
     </li>
 </ul>
+<h3><b>Controls</b></h3>
+<ul>
+    <li><strong>Spacebar:</strong> Press to make the bird jump.</li>
+    <li><strong>P:</strong> Press to pause and resume the game.</li>
+    <li><strong>Esc:</strong> Close the game.</li>
+</ul>
+<h3><b>Customization</b></h3> 
+<ul>
+    <li><strong>Changing Images:</strong> Replace the <code>bird.png</code>, <code>apple.png</code>, <code>clouds.png</code>, <code>grasses.png</code>, and <code>airplane.png</code> files in the root directory to use different graphics for the bird, apples, clouds, grass, and airplanes.</li>
+    <li><strong>Modifying Difficulty:</strong> You can modify the difficulty by adjusting the speed of the columns or the frequency at which they spawn. This can be done in the <code>addColumn</code> method of the <code>FlappyBird</code> class.</li>
+    <li><strong>Sound Customization:</strong> Replace the sound files (<code>mixkit-arcade.wav</code> and <code>mixkit-game-level.wav</code>) with any <code>.wav</code> files of your choice to customize background music and the game-over sound.</li>
+</ul>
 
 https://github.com/user-attachments/assets/7b91b6f2-10ff-4bb8-8dca-929068a01533
 

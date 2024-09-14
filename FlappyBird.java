@@ -14,6 +14,12 @@ class Apple extends Rectangle {
     }
 }
 
+class Orange extends Rectangle {
+    public Orange(int x, int y, int width, int height) {
+        super(x, y, width, height);
+    }
+}
+
 class Cloud extends Rectangle {
     public Cloud(int x, int y, int width, int height) {
         super(x, y, width, height);
@@ -29,12 +35,13 @@ class Airplane extends Rectangle {
 public class FlappyBird implements ActionListener, KeyListener {
 
     public static FlappyBird flappyBird;
-    public final int WIDTH = 800, HEIGHT = 600;
+    public final int WIDTH = 800, HEIGHT = 800;
 
     public Renderer renderer;
     public Rectangle bird;
     public ArrayList<Rectangle> columns;
     public ArrayList<Apple> apples;
+    public ArrayList<Orange> oranges;  // Added oranges list
     public ArrayList<Cloud> clouds;
     public ArrayList<Airplane> airplanes;
     public Random random;
@@ -45,6 +52,7 @@ public class FlappyBird implements ActionListener, KeyListener {
     // Images
     public BufferedImage birdImage;
     public BufferedImage appleImage;
+    public BufferedImage orangeImage;  // Added orange image
     public BufferedImage cloudImage;
     public BufferedImage grassImage;
     public BufferedImage airplaneImage;
@@ -52,6 +60,7 @@ public class FlappyBird implements ActionListener, KeyListener {
     // Sounds
     public Clip gameOverSound;
     public Clip backgroundMusic;
+    public Clip eatingSound;  // Added eating sound
 
     public FlappyBird() {
         JFrame jframe = new JFrame();
@@ -69,6 +78,7 @@ public class FlappyBird implements ActionListener, KeyListener {
         bird = new Rectangle(WIDTH / 2 - 20, HEIGHT / 2 - 15, 70, 60);
         columns = new ArrayList<>();
         apples = new ArrayList<>();
+        oranges = new ArrayList<>();  // Initialize oranges list
         clouds = new ArrayList<>();
         airplanes = new ArrayList<>();
         random = new Random();
@@ -77,6 +87,7 @@ public class FlappyBird implements ActionListener, KeyListener {
         try {
             birdImage = ImageIO.read(new File("bird.png"));
             appleImage = ImageIO.read(new File("apple.png"));
+            orangeImage = ImageIO.read(new File("orange.png"));  // Load orange image
             cloudImage = ImageIO.read(new File("clouds.png"));
             grassImage = ImageIO.read(new File("grasses.png")); // Load grass image
             airplaneImage = ImageIO.read(new File("airplane.png")); // Load airplane image
@@ -89,6 +100,10 @@ public class FlappyBird implements ActionListener, KeyListener {
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("mixkit-arcade.wav"));
             gameOverSound = AudioSystem.getClip();
             gameOverSound.open(audioInputStream);
+
+            audioInputStream = AudioSystem.getAudioInputStream(new File("apple_eat.wav"));  // Load eating sound
+            eatingSound = AudioSystem.getClip();
+            eatingSound.open(audioInputStream);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -132,12 +147,21 @@ public class FlappyBird implements ActionListener, KeyListener {
     }
 
     public void addApple() {
-        int width = 50;
-        int height = 50;
+        int width = 70;
+        int height = 70;
         int x = WIDTH + width + apples.size() * 500;
         int y = random.nextInt(HEIGHT - height - 120);
 
         apples.add(new Apple(x, y, width, height));
+    }
+
+    public void addOrange() {  // Added method to add oranges
+        int width = 70;
+        int height = 70;
+        int x = WIDTH + width + oranges.size() * 500;
+        int y = random.nextInt(HEIGHT - height - 120);
+
+        oranges.add(new Orange(x, y, width, height));
     }
 
     public void addCloud() {
@@ -167,6 +191,10 @@ public class FlappyBird implements ActionListener, KeyListener {
         g.drawImage(appleImage, apple.x, apple.y, apple.width, apple.height, null);
     }
 
+    public void paintOrange(Graphics g, Orange orange) {  // Added method to paint oranges
+        g.drawImage(orangeImage, orange.x, orange.y, orange.width, orange.height, null);
+    }
+
     public void paintCloud(Graphics g, Cloud cloud) {
         g.drawImage(cloudImage, cloud.x, cloud.y, cloud.width, cloud.height, null);
     }
@@ -190,6 +218,7 @@ public class FlappyBird implements ActionListener, KeyListener {
             bird = new Rectangle(WIDTH / 2 - 20, HEIGHT / 2 - 15, 70, 60);
             columns.clear();
             apples.clear();
+            oranges.clear();  // Clear oranges list
             clouds.clear();
             airplanes.clear();
             yMotion = 0;
@@ -239,6 +268,11 @@ public class FlappyBird implements ActionListener, KeyListener {
                     apple.x -= speed;
                 }
 
+                for (int i = 0; i < oranges.size(); i++) {  // Update oranges position
+                    Orange orange = oranges.get(i);
+                    orange.x -= speed;
+                }
+
                 for (int i = 0; i < clouds.size(); i++) {
                     Cloud cloud = clouds.get(i);
                     cloud.x -= speed / 2; // Clouds move slower than other elements
@@ -273,6 +307,14 @@ public class FlappyBird implements ActionListener, KeyListener {
                     }
                 }
 
+                for (int i = 0; i < oranges.size(); i++) {  // Remove oranges that move off screen
+                    Orange orange = oranges.get(i);
+
+                    if (orange.x + orange.width < 0) {
+                        oranges.remove(orange);
+                    }
+                }
+
                 for (int i = 0; i < clouds.size(); i++) {
                     Cloud cloud = clouds.get(i);
 
@@ -293,6 +335,7 @@ public class FlappyBird implements ActionListener, KeyListener {
 
                 if (ticks % 100 == 0) {
                     addApple();
+                    addOrange();  // Added line to add oranges periodically
                 }
 
                 bird.y += yMotion;
@@ -306,10 +349,24 @@ public class FlappyBird implements ActionListener, KeyListener {
                     }
                 }
 
-                for (Apple apple : apples) {
+                for (int i = 0; i < apples.size(); i++) {
+                    Apple apple = apples.get(i);
+
                     if (apple.intersects(bird)) {
                         score++;
                         apples.remove(apple);
+                        playEatingSound();  // Play eating sound when apple is eaten
+                        break;
+                    }
+                }
+
+                for (int i = 0; i < oranges.size(); i++) {  // Check for collisions with oranges
+                    Orange orange = oranges.get(i);
+
+                    if (orange.intersects(bird)) {
+                        score++;
+                        oranges.remove(orange);
+                        playEatingSound();  // Play eating sound when orange is eaten
                         break;
                     }
                 }
@@ -362,6 +419,10 @@ public class FlappyBird implements ActionListener, KeyListener {
             paintApple(g, apple);
         }
 
+        for (Orange orange : oranges) {  // Draw oranges
+            paintOrange(g, orange);
+        }
+
         g.setColor(Color.black);
         g.setFont(new Font("Arial", Font.PLAIN, 60));
 
@@ -392,6 +453,14 @@ public class FlappyBird implements ActionListener, KeyListener {
         if (gameOverSound != null && !gameOverSound.isRunning()) {
             gameOverSound.setFramePosition(0);
             gameOverSound.start();
+        }
+    }
+
+    // Play eating sound
+    public void playEatingSound() {
+        if (eatingSound != null && !eatingSound.isRunning()) {
+            eatingSound.setFramePosition(0);
+            eatingSound.start();
         }
     }
 

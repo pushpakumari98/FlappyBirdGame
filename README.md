@@ -10,6 +10,7 @@
     <li><strong>Game Features</strong></li>
     <li><strong>Controls</strong></li>
     <li><strong>Customization</strong></li>
+    <li>Contribution</li>
 </ul>
 <h3><b>Requirements</b></h3>
 <ul>
@@ -103,7 +104,8 @@
     <li><strong>Modifying Difficulty:</strong> You can modify the difficulty by adjusting the speed of the columns or the frequency at which they spawn. This can be done in the <code>addColumn</code> method of the <code>FlappyBird</code> class.</li>
     <li><strong>Sound Customization:</strong> Replace the sound files (<code>mixkit-arcade.wav</code> and <code>mixkit-game-level.wav</code>) with any <code>.wav</code> files of your choice to customize background music and the game-over sound.</li>
 </ul>
-
+<h3><b></b></h3>
+Contributions are welcome! If you'd like to contribute to the game, please fork the repository and submit a pull request with your changes.
 
 
 https://github.com/user-attachments/assets/055f2a60-0237-4589-9bb8-d4a55b767ad9

@@ -109,7 +109,7 @@ public class FlappyBird implements ActionListener, KeyListener {
         }
 
         try {
-            AudioInputStream backgroundAudioStream = AudioSystem.getAudioInputStream(new File("mixkit-game-level.wav"));
+            AudioInputStream backgroundAudioStream = AudioSystem.getAudioInputStream(new File("background_music.wav"));
             backgroundMusic = AudioSystem.getClip();
             backgroundMusic.open(backgroundAudioStream);
             backgroundMusic.loop(Clip.LOOP_CONTINUOUSLY);  // Loop the background music

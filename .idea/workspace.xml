@@ -1,36 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Flappy Bird:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10288ce7-7e3f-4901-9181-928213d7f195" name="Changes" comment="updated">
-      <change afterPath="$PROJECT_DIR$/.idea/Flappy Bird.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Airplane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Airplane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apple.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Butterfly.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cloud.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cloud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlappyBird$Renderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlappyBird.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orange.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Renderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rose.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/butterfly.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roses.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airplane.class" beforeDir="false" afterPath="$PROJECT_DIR$/Airplane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/Apple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Banana.class" beforeDir="false" afterPath="$PROJECT_DIR$/Banana.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cherry.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cherry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloud.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlappyBird.class" beforeDir="false" afterPath="$PROJECT_DIR$/FlappyBird.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orange.class" beforeDir="false" afterPath="$PROJECT_DIR$/Orange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Renderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/Airplane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/Banana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/Cherry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/Cloud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/FlappyBird.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/Orange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/Renderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/example/FlappyBird/flappybird.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/FlappyBird.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/com/example/FlappyBird/FlappyBird.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -43,20 +59,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/panka/Desktop/scm2.0/Flappy Bird&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/panka/Desktop/Flappy Bird&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/panka/Desktop/scm2.0/Flappy Bird/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "C:/Users/panka/Desktop/scm2.0/Flappy Bird",
+    "last_opened_file_path": "C:/Users/panka/Desktop/java project/Flappy Bird",
+    "onboarding.tips.debug.path": "C:/Users/panka/Desktop/scm2.0/Flappy Bird/src/Main.java",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\panka\Desktop\scm2.0\Flappy Bird" />
     </key>
+  </component>
+  <component name="RunAnythingContextRecentDirectoryCache">
+    <option name="paths">
+      <recentPaths value="$PROJECT_DIR$" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -64,6 +89,35 @@
         <option value="Application" />
       </set>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="FlappyBird" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726243283668</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated">
+      <option name="closed" value="true" />
+      <created>1754101437081</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754101437081</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated">
+      <option name="closed" value="true" />
+      <created>1754101453538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754101453538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

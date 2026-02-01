@@ -26,7 +26,9 @@ let pipes = [];
 pipes.push({ x: 400, gap: 150, top: 200 });
 
 // Start music
-bgMusic.play();
+document.addEventListener("keydown", () => {
+  if (bgMusic.paused) bgMusic.play();
+}, { once: true });
 
 // Controls
 document.addEventListener("keydown", e => {
@@ -106,3 +108,8 @@ function loop() {
 }
 
 loop();
+
+canvas.addEventListener("touchstart", () => {
+  velocity = jump;
+});
+
